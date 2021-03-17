@@ -26,7 +26,7 @@ def raw_data():
     results_num = int(results_num.replace(',',''))
     index = 0
     results_num_placeholder = 20
-    while index < results_num_placeholder:
+    while index < results_num:
         req_url = "https://www.rightmove.co.uk/property-to-rent/find.html?searchType=RENT&locationIdentifier=REGION%5E787&insId=1&radius=0.0&index="+str(index)
         print(req_url)
         index += 24
