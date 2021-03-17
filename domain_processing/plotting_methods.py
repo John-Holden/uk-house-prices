@@ -1,3 +1,4 @@
+import geopandas
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -23,3 +24,11 @@ def plot_map(domain:np.ndarray, save, title):
 
     plt.show()
     plt.close()
+
+
+def plot_shp_file(filepath):
+    df = geopandas.read_file(filepath)
+
+    df.plot()
+    plt.savefig('all_post_codes.pdf')
+    plt.show()
