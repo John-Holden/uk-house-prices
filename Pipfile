@@ -11,6 +11,7 @@ numpy = "*"
 geopandas = "*"
 matplotlib = "*"
 pytest = "*"
+contextily = "*"
 
 [dev-packages]
 
