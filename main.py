@@ -19,9 +19,8 @@ def test_me():
     post_codes.plot_domain(title='I have been reset...')
 
 
-
-
 if __name__ == '__main__':
-    path = f'{PATH_TO_DATA}/Areas.shp'
-    plot_shp_file(PATH_TO_DIST)
+    from domain_processing import UkPostCodes
+    post_codes = UkPostCodes('Districts')
+    post_codes.load_post_code('LS')
 
