@@ -18,7 +18,7 @@ class UkPostCodes:
         df.boundary.plot()
         plt.show()
         ls_pc = [df.loc[i] for i, row in enumerate(df.name.str.contains(f'^{pc}') ) if row]
-        
+
 
         assert 0
 
